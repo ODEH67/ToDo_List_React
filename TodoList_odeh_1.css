@@ -139,7 +139,7 @@ padding: 0em 1em;
 
     }
 
-#list {
+.list {
     display: flex;
     flex-direction: row;
     /* justify-content:space-around; */
@@ -164,7 +164,7 @@ padding: 0em 1em;
     border-radius: 0.4em;
 }
 
-#list a {
+.list a {
     text-decoration: none;
 /* padding: 1em 1em 0em; */
     }

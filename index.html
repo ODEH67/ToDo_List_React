@@ -117,24 +117,24 @@
                 </section>
             </section>
             <!-- -->
-            <div id="list">
+            <div class="list">
                 <a href="#">
                     <div id="list_add">
                     <img src="pics/odeh/add_1.png" alt="add"><span>Add List</span>
                     </div>
                 </a>
-                <div  id="list_template"  class="list_new" style="display: ;">
+                <div  id="list_template"  class="list_new" style="display:none;">
                     <span class="material-symbols-outlined" id="del_list" >close</span>
                     <div action="" method="post" class="list_form">
                         <input maxlength="20" required type="text" name="title_box_1" placeholder="Give a Title" id="list_title_1" >
-                        <select name="color_list" id="color_list" >
+                        <select name="color_list" id="color_list">
                             <option value="status_blue" id="status_blue"></option>
                             <option value="status_pink" id="status_pink"></option>
                             <option value="status_green"id="status_green"></option>
                         </select>
                         <div class="add_div">
-                            <input type="text" name="input_box_1" id="list_input_1">
-                            <button type="button" class="add_text" id="add_text"><span id="add_text_id" class="material-symbols-outlined">add_circle</span></button>
+                            <input type="text" name="input_box_1" placeholder="" id="list_input_1">
+                            <button class="add_text" id="add_text"><span id="add_text_id" class="material-symbols-outlined">add_circle</span></button>
                             <ul class="to_do_text">
                             </ul>
                         </div>
@@ -145,6 +145,6 @@
     </main>
     <script src="side.js"></script>
     <script src="cal.js"></script>
-    <script src="todojs.js"></script>
+    <script src="TodoList_odeh_4.js"></script>
 </body>
 </html>
