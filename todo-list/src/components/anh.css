@@ -4,6 +4,7 @@
     width: auto;
     display: flex;
     justify-content: flex-start;
+    font-family: 'Nunito Sans', sans-serif;
     
     
 }
@@ -40,22 +41,13 @@
 #nav a {
     width: 1.7rem;
     height: 1.7rem;
-    background-color: aqua;
+    background-color: white;
     border-radius: 0.7rem;
     padding: 1rem;
     margin: 0.3rem;
 }
 
-.calendar {
-    width: 20%;
-    height: 97vh;
-    background-color: beige;
-    border-radius: 0.7rem;
-    margin: 0.5rem 0.5rem;
-    display: flex;
-    ;
-    
-}
+
 
 .workspace {
     background-color: rgb(127, 130, 133);
