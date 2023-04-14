@@ -5,6 +5,8 @@ import {RiCalendarEventFill} from 'react-icons/ri';
 import {RiSettings5Fill} from 'react-icons/ri';
 import {MdLanguage} from 'react-icons/md';
 import {CgDarkMode} from 'react-icons/cg';
+
+import StyleCalendar from "./components/calendar";
 import './App.css';
 import './components/anh.css';
 
@@ -34,7 +36,8 @@ function App() {
       <section className="workspace">This is where main task display
 
       </section>
-      <section className="calendar">calendar
+      <section className="calendar">
+        <StyleCalendar />
       </section>
     </div>
 
