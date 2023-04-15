@@ -5,8 +5,8 @@ import {RiLogoutBoxRLine} from 'react-icons/ri';
 import {RiAccountPinCircleFill} from 'react-icons/ri';
 import {RiCalendarEventFill} from 'react-icons/ri';
 import {RiSettings5Fill} from 'react-icons/ri';
-import {MdLanguage} from 'react-icons/md';
-import {CgDarkMode} from 'react-icons/cg';
+
+
 
 export default function Sidebar() {
     return (
@@ -18,8 +18,7 @@ export default function Sidebar() {
                 <div id="nav">
                     <a><RiAccountPinCircleFill /></a>
                     <a><RiCalendarEventFill /></a>
-                    <a><MdLanguage /></a>
-                    <a><CgDarkMode /></a>
+
                     <a><RiSettings5Fill /></a>
 
             

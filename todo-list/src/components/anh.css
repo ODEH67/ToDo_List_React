@@ -1,5 +1,12 @@
-.body {
-    background-color: rgb(20, 32, 46);
+*{
+    
+}
+
+body {
+    
+}
+.main {
+    
     min-height: 100vh;
     width: auto;
     display: flex;
@@ -8,6 +15,13 @@
     
     
 }
+
+.light {
+    background-color: rgb(20, 32, 46);
+    color:beige;
+
+}
+
 .side-bar {
     width: 5%;
     height: 97vh;
@@ -50,9 +64,72 @@
 
 
 .workspace {
-    background-color: rgb(127, 130, 133);
-    opacity: 75%;
+    
     width: 75%;
-    color: rgb(52, 155, 21);
-    font-size: 5rem;
+    
 }
+
+#header {
+    display: flex;
+    justify-content: space-around;
+}
+
+#header h1 {
+    font-family: 'Righteous', cursive;
+    color: beige;
+    font-size: 3rem;
+}
+
+#head-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 50%;
+   
+    padding-top: 3.4rem;
+    
+}
+
+#theme-tool {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: beige;
+    font-size: 2rem;
+    width: 30%;
+    gap: 1rem;
+    
+}
+
+#search-tool {
+    width: 70%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.searchTerm {
+    width: 70%;
+    border: 3px solid #00B4CC;
+    border-right: none;
+    padding: 5px;
+    height: 20px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: #9DBFAF;
+  }
+  
+  .searchTerm:focus{
+    color: #00B4CC;
+  }
+  
+  .searchButton {
+    width: 40px;
+    height: 36px;
+    border: 1px solid #00B4CC;
+    background: #00B4CC;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+  }

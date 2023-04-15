@@ -1,21 +1,25 @@
 
 import Sidebar from './components/sidebar';
 import StyleCalendar from "./components/calendar";
+import Heading from './components/heading';
 //import './App.css';
 import './components/anh.css';
 
 
 function App() {
   return (
-    <div className="body">
-      <Sidebar />
-      <section className="workspace">
-        <div id='heading'>logo</div>
-        <div>This is where main task display</div>
+    <body>
+      <div className='main'>
+        <Sidebar />
+        <section className="workspace">
+          <Heading />
+          <div></div>
 
-      </section>  
-      <StyleCalendar /> 
-    </div>
+        </section>  
+        <StyleCalendar /> 
+      </div>
+
+    </body>
 
   );
 }
