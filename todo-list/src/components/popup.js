@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import { useRef } from 'react';
 import './anh.css';
 import {RiAccountPinCircleFill} from 'react-icons/ri';
+import PassInfo from './info';
+//import LoginApp from './login';
+
 
 
 export default function Popup() {
@@ -17,11 +20,14 @@ export default function Popup() {
     const password=useRef()
     const getEmail=localStorage.getItem("emailData")
     const getPassword=localStorage.getItem("passwordData")
-    const handleSubmit=()=>{
-        if(email.current.value=="abc@gmail.com"&&password.current.value=="12345"){
-            localStorage.setItem("emailData","abc@gmail.com")
+    const handleClick=()=>{
+        if(email.current.value=="anhchau8922@gmail.com"&&password.current.value=="12345"){
+            localStorage.setItem("emailData","anhchau8922@gmail.com")
             localStorage.setItem("passwordData","12345")
         }
+    }   
+    const getInfo = () => {
+        getEmail&&getPassword? <PassInfo /> : null
     }
 
     return(
@@ -36,19 +42,21 @@ export default function Popup() {
                                 <h2>Login</h2>
                                 <h1 onClick={closePopup}>X</h1>
                             </div>
-                            <form onSubmit={handleSubmit}>
+                            <form onSubmit={getInfo}>
+                                
                                 <label>Email:
                                     <input type="text" ref={email} />
                                 </label>
                                 <label>Password:
                                     <input type="password" ref={password} />
                                 </label>
-                                <button>Login</button>
-                            </form>
-                            
+                                <button onClick={handleClick}>Login</button>
+                            </form> 
+                                  
                         </div>
                     </div>:""
                 }
+                
             </div>
         </div>
     )

@@ -6,7 +6,7 @@ import './anh.css';
 import {BsSearch} from 'react-icons/bs';
 import {CgDarkMode} from 'react-icons/cg';
 import {MdLanguage} from 'react-icons/md';
-import {RiAccountCircleFill} from 'react-icons/ri';
+
 
 export default function Heading() {
     const [theme, setTheme] = useState(false);
@@ -39,7 +39,7 @@ export default function Heading() {
                     <MdLanguage />
                     
                     <div id="darkLight-mode" onClick={handleClick}><CgDarkMode /></div>
-                    <RiAccountCircleFill />
+                    
                 </div>
             </div>
         </div>
