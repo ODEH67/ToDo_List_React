@@ -33,6 +33,11 @@ body {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    color: rgb(20, 32, 46);
+    border-color: beige;
+    border-style: outset;
+    box-shadow: 1px 1px 2px rgb(20, 32, 46);
+    
     
 }
  
@@ -44,22 +49,28 @@ body {
     width: 15rem;
 }
 
+
+
 #nav {
     display: flex;
     flex-direction: column;
-   
+    justify-content: center;
+    align-items: center;
     
     
 }
 
 #nav a {
-    width: 1.7rem;
-    height: 1.7rem;
+    width: 1.6rem;
+    height: 1.6rem;
     background-color: white;
     border-radius: 0.7rem;
     padding: 1rem;
     margin: 0.3rem;
+    
 }
+
+
 
 
 
@@ -76,7 +87,7 @@ body {
 
 #header h1 {
     font-family: 'Righteous', cursive;
-    color: beige;
+    
     font-size: 3rem;
 }
 
@@ -94,12 +105,16 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    color: beige;
+    
     font-size: 2rem;
     width: 30%;
     gap: 1rem;
     
 }
+.language-items {
+    display: relative;
+}
+
 
 #search-tool {
     width: 70%;
@@ -133,3 +148,26 @@ body {
     cursor: pointer;
     font-size: 20px;
   }
+
+  .mainpopup {
+    background-color: rgba(188, 195, 199, 0.71);
+    height: 100%;
+    width: 100%;
+    position:absolute;
+    top: 0;
+  }
+
+  .popup{
+    height: 400px;
+    width: 50%;
+    background-color: white;
+    position: absolute;
+    top: 25%;
+    right: 25%;
+}
+.popup-header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px 0 15px;
+    border-bottom: 2px solid black;
+}

@@ -1,5 +1,6 @@
 .app-calendar {
     text-align: center;
+    color: rgb(20, 32, 46);
     
 }
 
@@ -11,6 +12,11 @@
   margin: 0.5rem 0.5rem;
   display: flex;
   justify-content: center;
+  border-color: beige;
+  border-style: outset;
+  box-shadow: 1px 1px 2px rgb(20, 32, 46);
+  
+  
 }
 
 .react-calendar {

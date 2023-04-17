@@ -1,12 +1,12 @@
 import React from 'react';
 import './anh.css';
 import { RiMenuUnfoldFill } from "react-icons/ri";
-import {RiLogoutBoxRLine} from 'react-icons/ri';
+
 import {RiAccountPinCircleFill} from 'react-icons/ri';
 import {RiCalendarEventFill} from 'react-icons/ri';
 import {RiSettings5Fill} from 'react-icons/ri';
-
-
+import Profile from './profile.js';
+import Popup from './popup.js';
 
 export default function Sidebar() {
     return (
@@ -16,7 +16,7 @@ export default function Sidebar() {
             </div>
             <div className="task-list">
                 <div id="nav">
-                    <a><RiAccountPinCircleFill /></a>
+                    <a><Popup /></a>
                     <a><RiCalendarEventFill /></a>
 
                     <a><RiSettings5Fill /></a>
@@ -24,9 +24,8 @@ export default function Sidebar() {
             
                 </div>
             </div>
-            <div className="logout">
-                <RiLogoutBoxRLine />
-            </div>
+            <Profile />
+            
         </section>
     )
 }
