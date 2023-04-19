@@ -17,7 +17,7 @@ export default function Heading() {
     useEffect(() => {
         //const element = document.body;
         //element.classList.toggle("light")
-        if (theme === true) {
+        if (theme === false) {
             document.body.classList.add("light");
         } else {
             document.body.classList.remove("light");

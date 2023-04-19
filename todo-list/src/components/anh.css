@@ -1,10 +1,4 @@
-*{
-    
-}
 
-body {
-    
-}
 .main {
     
     min-height: 100vh;
@@ -13,12 +7,11 @@ body {
     justify-content: flex-start;
     font-family: 'Nunito Sans', sans-serif;
     
-    
 }
 
 .light {
     background-color: rgb(20, 32, 46);
-    color:beige;
+    color: beige
 
 }
 
@@ -27,7 +20,7 @@ body {
     height: 97vh;
     background-color: beige;
     border-radius: 0.7rem;
-    margin: 0.5rem 0.5rem;
+    margin: auto;
     font-size: 2rem;
     display: flex;
     flex-direction: column;
@@ -41,35 +34,43 @@ body {
     
 }
  
-.side-bar.minimized {
-    width: 50rem;
-}
-
-.side-bar.expand {
-    width: 15rem;
-}
-
-
-
-#nav {
+.side-bar-XL {
+    width: 20%;
+    height: 95vh;
+    background-color: beige;
+    border-radius: 0.7rem;
+    margin: auto;
+    font-size: 2rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
-    
+    justify-content: space-around;
+    align-items: flex-start;
+    color: rgb(20, 32, 46);
+    border-color: beige;
+    border-style: outset;
+    box-shadow: 1px 1px 2px rgb(20, 32, 46);
 }
 
-#nav a {
-    width: 1.6rem;
-    height: 1.6rem;
-    background-color: white;
-    border-radius: 0.7rem;
-    padding: 1rem;
-    margin: 0.3rem;
-    
+
+
+.task-list {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;  
 }
 
+.task-list a {  
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 1rem 1rem;
+}
+.nav-items {
+    font-size: 1rem;
+    font-weight: 700;
+}
 
 
 
