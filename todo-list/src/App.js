@@ -2,7 +2,7 @@ import React from 'react';
 import "./2.css"
 import "./calendar.css"
 import "./TodoList_odeh_1.css"
-import {ListsCard} from "./listsCard"
+import {Tasks} from "./components/Tasks"
 
 import ProIcon from "./pics/odeh/icon_1.png"
 
@@ -15,15 +15,15 @@ export default function App() {
 <>
     <main>
         <header>
-            <p id="namey">LiSTa</p>
+            <p className="namey">LiSTa</p>
             <ul className="head">
-                <li><a href="#" id="dark_button" ><MdOutlineDarkMode/></a></li>
+                <li><a href="#" className="dark_button" ><MdOutlineDarkMode/></a></li>
                 <li><a href="#" ><MdOutlineLanguage/></a></li>
                 <li><a href="#">Profile</a></li>
-                <li><a href="#"><img id="icon_1" src= {ProIcon} alt="icon"/></a></li>
+                <li><a href="#"><img className="icon_1" src= {ProIcon} alt="icon"/></a></li>
             </ul>
         </header>
-        <ListsCard/>
+        <Tasks/>
             <section className="leftsidebar" >
                 <div className="nav-header">
                     <p className="logo"></p>
@@ -80,8 +80,7 @@ export default function App() {
                         <div className="month">
                         <i className="fas fa-angle-left prev"></i>
                         <div className="date">
-                            <h1></h1>
-                            <p></p>
+
                         </div>
                         <i className="fas fa-angle-right next"></i>
                         </div>

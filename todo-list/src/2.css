@@ -290,7 +290,7 @@ padding: 8px 16px;
 } 
 }*/
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1230px) {
   /* Reduce the width of the sidebar */
 .rightsidebar {
     display: none; /* for example */
