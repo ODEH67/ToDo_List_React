@@ -372,3 +372,6 @@ padding: 0em 1em;
     justify-content: center;
   }
 /* ----------------------------------------------------------------- */
+.hide{
+    display: none;
+}
