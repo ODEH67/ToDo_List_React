@@ -26,12 +26,8 @@ body {
 main {
     display: flex;
     flex-direction: column;
-    padding: 1em;
+    padding: 2em;
     font-family: 'Roboto', sans-serif;
-    /* max-width: 50em; */
-    /* color:rgb(255, 255, 255); */
-    /* margin-left: 10em; */
-    /* margin-right: 2em; */
 }
 
 header {
@@ -84,7 +80,7 @@ header {
 
 .body_container {
     /* width: 50em; */
-    padding: 1em 0em;
+    padding: 2em 0em;
 }
 
 
@@ -103,7 +99,7 @@ header {
 @media screen and (max-width: 1230px) { 
     .categories {
         width: 40em;
-  }
+}
 
 
 }
@@ -113,15 +109,6 @@ text-decoration: none;
 position: relative;
 padding: 0em 1em;
 }
-
-/* .cat_1, .cat_2, .cat_3, .cat_4 {
-    color: rgb(255, 255, 255);
-    border-radius: 0.5em;
-    padding: 3em 1em;
-    font-size: 1.5em;
-    font-weight: bold;
-    margin: 0em 1em 0.5em;
-} */
 
 
 .categories h1 {
@@ -169,66 +156,26 @@ padding: 0em 1em;
     flex-direction: column;
     /* justify-content:space-around; */
     /* flex-wrap: wrap; */
-    padding: 2em 1em;
+    padding: 5em 1em;
     gap: 1em;
     justify-content:center;
-}
-
-
-.list_add {
-    color: var(--primary-color);
-    background-color: var(--secondary-color);
-    padding: 2em 1.5em;
-    margin: 1em 0.1em;
-    opacity: 90%;
-    align-items: center;
-
-    display: flex;
-    flex-direction: column;
-    font-size: 1em;
-    border-radius: 0.4em;
 }
 
 .list a {
     text-decoration: none;
 /* padding: 1em 1em 0em; */
-    }
-    
-
-.list_add img{
-    opacity: 40%;
-    width: 7em;
-    margin: 1em;
 }
 
-/* .list_new {
-    color: rgba(24, 24, 24, 0.893);
-    background-color: aliceblue;
-    border-radius: 0.2em;
-    padding: 0em 0.5em 0.5em;
-    opacity: 90%;
-    text-align: center;
-    font-size: 2em;
-    max-width: 7.2em;
-    min-width: 7.2em;
-} */
-
-/** class list new for templates **/
 
 .list_new {
     color: var(--primary-color);
-    /* background-color: var(--secondary-color); */
-    background-color:rgba(255, 225, 180, 0.9);
+    background-color: var(--secondary-color);
 
     border-radius: 0.2em;
     padding: 0.5em 0.5em;
-    /* margin: 0.5em;  */
     opacity: 90%;
     text-align: center;
     font-size: 2em;
-
-    /* max-width: 7.8em; */
-    /* min-width: 7.8em; */
 }
 
 .list_input_1, .list_title_1 {
@@ -248,42 +195,24 @@ padding: 0em 1em;
 }
 
 .card_greeting {
-   padding: 0.6em;
-   background-color:burlywood;
-   border-radius: 1rem 0rem;
-   border:3px solid bisque;
-   color:var(--primary-color)
+    padding: 0.6em;
+    background-color:var(--primary-color);
+    border-radius: 1rem 0rem;
+    border:3px solid var(--secondary-color);
+    color:var(--secondary-color)
 }
 
 .list_input_1 {
     font-size: 1em;
     /* max-width: 10em; */
     height: 1.5em;
+    color: var(--primary-color);
     background-color: var(--secondary-color);
     padding: 0em 1em;
 }
 
 .adder_modifier {
     padding: 2rem;
-}
-
-/* .status_blue {
-    background-color: blue;
-    color: blue;
-    border-radius: 50%;
-}
-
-.status_pink {
-    background-color:darkorchid;
-    color: darkorchid;
-    border-radius: 50%;
-}
-
-.status_green {
-    background-color:green;
-    color: green;
-    padding: 1em;
-    border-radius: 40%;
 }
 
 .color_list {
@@ -333,19 +262,18 @@ padding: 0em 1em;
     align-items: center;
     justify-content: space-between;
     font-size: 1.7em;
-    border-bottom: 2px solid rgba(110, 59, 59, 0.902);
-    background-color:rgba(255, 235, 205, 0.884);
-    border-radius: 4px;
+    border-bottom: 2px solid var(--primary-color);
+    background-color:aliceblue;
 }
 
 .add_div li {
     border-radius: 4px;
-  }
-  
+}
 
-    .icons {
-        padding: 0em 0.2em;
-    }
+
+.icons {
+    padding: 0em 0.2em;
+}
 
 .iconsWrap{
     flex:none;
@@ -357,9 +285,9 @@ padding: 0em 1em;
 .taskBg div {
     display: flex;
     align-items: center;
-  }
+}
 
-  .taskNumber {
+.taskNumber {
     color: #7a7979;
     border: 1px solid #6e6e6e;
     border-radius: 50%;
@@ -370,7 +298,7 @@ padding: 0em 1em;
     margin-right: 8px;
     align-items: center;
     justify-content: center;
-  }
+}
 /* ----------------------------------------------------------------- */
 .hide{
     display: none;

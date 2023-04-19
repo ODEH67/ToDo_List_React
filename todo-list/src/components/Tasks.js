@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 
+
 import { FaPlusCircle } from "react-icons/fa";
 import { RiDeleteBin2Fill } from "react-icons/ri";
 import { MdModeEditOutline } from "react-icons/md";
@@ -11,11 +12,13 @@ import DoneLists from "../pics/odeh/cat_Frame_22.png";
 import ProgressLists from "../pics/odeh/cat_Frame_33.png";
 
 import "../TodoList_odeh_1.css";
+
 const Filter = {
 	showAll: 0,
 	ShowOnlyInProgress: 1,
 	showOnlyCompleted: 2,
 };
+
 //call the local storage
 const getLocalStorage = () => {
 	let toDo = localStorage.getItem("toDo");
@@ -34,7 +37,7 @@ export function Tasks() {
 	// Temp State
 	const [newTask, setNewTask] = useState("");
 	const [updateData, setUpdateData] = useState("");
-	const [category, setcategory] = useState("");
+	// const [category, setcategory] = useState("");
 
 
 	//save to the local storage
@@ -45,15 +48,15 @@ export function Tasks() {
 	// Add task
 	const addTask = () => {
         a7a(Filter.showAll)
-		// filter = '';
-		// filter = Filter.showAll;
-		// if(newTask) {
-		// let num = Date.now()
-		// setToDo([...toDo, { id: num, text: newTask, status: false}
-		// ])
-		// setNewTask('')
+		filter = '';
+		filter = Filter.showAll;
+		if(newTask) {
+		let num = Date.now()
+		setToDo([...toDo, { id: num, text: newTask, status: false}
+		])
+		setNewTask('')
 
-		// }
+		}
 	};
 
 	// Delete task
@@ -114,6 +117,8 @@ export function Tasks() {
 		// filter = 'ShowOnlyCompleted'
         a7a(Filter.showOnlyCompleted)
 	};
+
+	
 	function a7a(param) {
         let matches
 		switch (param) {
@@ -121,10 +126,10 @@ export function Tasks() {
                 matches = document.body.getElementsByClassName('suftrue')
                 for (let i = 0; i < matches.length; i++) {
                     matches[i].classList.remove("hide");
-                  }
-                  matches = document.body.getElementsByClassName('suffalse')
-                  for (let i = 0; i < matches.length; i++) {
-                      matches[i].classList.remove("hide");
+                }
+                matches = document.body.getElementsByClassName('suffalse')
+                for (let i = 0; i < matches.length; i++) {
+                    matches[i].classList.remove("hide");
                     }
 				break;
 			case Filter.ShowOnlyInProgress:
@@ -133,7 +138,7 @@ export function Tasks() {
                     matches = document.body.getElementsByClassName('suftrue')
                     for (let i = 0; i < matches.length; i++) {
                         matches[i].classList.add("hide");
-                      }
+                    }
                 break;
 
 			case Filter.showOnlyCompleted:
@@ -142,7 +147,7 @@ export function Tasks() {
                     matches = document.body.getElementsByClassName('suffalse')
                     for (let i = 0; i < matches.length; i++) {
                         matches[i].classList.add("hide");
-                      }
+                    }
                 break;
 			default:
 				break;

@@ -10,4 +10,4 @@ return (
 <button className="add_text"><span className="material-symbols-outlined add_text_id" onClick={updateTask}><GrUpdate/></span></button>
 <button className="cancel_text"><span className="material-symbols-outlined add_text_id" onClick={cancelUpdate}><ImCancelCircle/></span></button>
 </div>)
-}
+} 
