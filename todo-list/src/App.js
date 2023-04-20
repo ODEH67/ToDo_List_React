@@ -20,7 +20,7 @@ export default function App() {
     <>
       <div className='main'>
         <Sidebar />
-        <section className="workspace">
+        <section className="workspace">  
           <Heading />
           <Tasks/>
           
