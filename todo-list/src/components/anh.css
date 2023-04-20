@@ -51,6 +51,9 @@
     box-shadow: 1px 1px 2px rgb(20, 32, 46);
 }
 
+.side-bar-XL .menu {
+    padding-left: 1rem;
+}
 
 
 .task-list {
@@ -70,6 +73,7 @@
 .nav-items {
     font-size: 1rem;
     font-weight: 700;
+    
 }
 
 

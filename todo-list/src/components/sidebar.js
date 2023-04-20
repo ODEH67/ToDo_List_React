@@ -46,7 +46,7 @@ export default function Sidebar() {
                     <a><RiSettings5Fill />{slide?"":<p className='nav-items'>SETTING</p>}</a>           
                 </nav>
             </div>
-            <div><Profile /></div>
+            <div className='menu'><Profile /></div>
             
           
             
