@@ -237,16 +237,6 @@ padding: 0em 1em;
     list-style: none;
 }
 
-.del_list {
-    margin-right: 7em;
-    cursor: pointer;
-}
-
-.grayed_out {
-    color: gray;
-    text-decoration: line-through;
-    
-}
 
 /* ----------------------------------------------------------------- */
 /* .taskBg .taskText {
