@@ -30,7 +30,7 @@ export default function Popup() {
   const getInfo = () => {
     return getEmail && getPassword ? <PassInfo /> : null;
   };
-
+ 
   return (
     <div>
       <div onClick={handleClickOpen}>
