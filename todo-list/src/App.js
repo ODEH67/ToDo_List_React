@@ -9,6 +9,31 @@ import ProIcon from "./pics/odeh/icon_1.png"
 import {MdOutlineDarkMode} from 'react-icons/md'
 import {MdOutlineLanguage} from 'react-icons/md'
 
+import Sidebar from './components/sidebar';
+import StyleCalendar from "./components/calendar";
+import Heading from './components/heading';
+//import './App.css';
+import './components/anh.css';
+
+
+function App() {
+  return (
+    <body>
+      <div className='main'>
+        <Sidebar />
+        <section className="workspace">
+          <Heading />
+          <div></div>
+
+        </section>  
+        <StyleCalendar /> 
+      </div>
+
+    </body>
+
+
+
+
 
 export default function App() {
 return (
@@ -26,6 +51,7 @@ return (
         <Tasks/>
     </main>
 </>
+
   );
 }
 
