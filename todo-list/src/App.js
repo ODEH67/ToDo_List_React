@@ -16,42 +16,67 @@ import Heading from './components/heading';
 import './components/anh.css';
 
 
-function App() {
+                                        // ++++++++ running code ++++++++
+export default function App() {
   return (
     <body>
+      <main>         {/* the main and header containers are been stayled in the TodoList_odeh_1.css file */}
+     
       <div className='main'>
         <Sidebar />
-        <section className="workspace">
+        <section className="workspace">  
           <Heading />
-          <div></div>
-
-        </section>  
-        <StyleCalendar /> 
+        </section>
+          <Tasks/>
+        <StyleCalendar />
       </div>
-
+      </main>
     </body>
-
-
-
-
-
-export default function App() {
-return (
-<>
-    <main>         {/* the main and header containers are been stayled in the TodoList_odeh_1.css file */}
-        <header>
-            <p className="namey">LiSTa</p>
-            <ul className="head">
-                <li><a href="#" className="dark_button" ><MdOutlineDarkMode/></a></li>
-                <li><a href="#" ><MdOutlineLanguage/></a></li>
-                <li><a href="#">Profile</a></li>
-                <li><a href="#"><img className="icon_1" src= {ProIcon} alt="icon"/></a></li>
-            </ul>
-        </header>
-        <Tasks/>
-    </main>
-</>
-
   );
 }
+
+                                        // ++++++++ ahn code ++++++++
+
+
+// export default function App() {
+//   return (
+//     <body>
+//       <div className='main'>
+//         <Sidebar />
+//         <section className="workspace">
+//           <Heading />
+//           <div></div>
+
+//         </section>  
+//         <StyleCalendar /> 
+//       </div>
+
+//     </body>
+
+
+//   );
+// }
+
+                                        // ++++++++ odeh code ++++++++
+
+
+// export default function App() {
+// return (
+// <>
+//     <main>         {/* the main and header containers are been stayled in the TodoList_odeh_1.css file */}
+//         <header>
+//             <p className="namey">LiSTa</p>
+//             <ul className="head">
+//                 <li><a href="#" className="dark_button" ><MdOutlineDarkMode/></a></li>
+//                 <li><a href="#" ><MdOutlineLanguage/></a></li>
+//                 <li><a href="#">Profile</a></li>
+//                 <li><a href="#"><img className="icon_1" src= {ProIcon} alt="icon"/></a></li>
+//             </ul>
+//         </header>
+//         <Tasks/>
+//     </main>
+// </>
+
+//   );
+// }
 
