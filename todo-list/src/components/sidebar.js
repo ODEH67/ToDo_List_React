@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import SlidingPane from "react-sliding-pane";
+
 import { render } from "react-dom";
 import './anh.css';
 import { RiMenuUnfoldFill } from "react-icons/ri";
@@ -12,22 +12,6 @@ import {RiSettings5Fill} from 'react-icons/ri';
 import Profile from './profile.js';
 import Popup from './popup.js';
 
-const NavData = [
-        {
-            text: "MY PROFILE",
-            icon: <RiAccountPinCircleFill />
-        },
-
-        {
-            text: "EVENT REMINDER",
-            icon: <RiCalendarEventFill />
-        },
-
-        {
-            text: "SETTING",
-            icon: <RiSettings5Fill />
-        }
-]
 
 
 

@@ -4,12 +4,12 @@
     
 }
 
-#calendar {
+.calendar {
   width: 23%;
   height: 95vh;
   background-color: beige;
   border-radius: 0.7rem;
-  margin: auto;
+  margin: 0;
   display: flex;
   justify-content: center;
   border-color: beige;

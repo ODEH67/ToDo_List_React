@@ -7,7 +7,7 @@ export default function StyleCalendar() {
     const [date, setDate] = useState(new Date());
 
     return (
-        <div id="calendar">
+        <div className = "calendar">
             <div className='app-calendar'>
                 <h1 className='app-calendar'>Calendar</h1>
                 <div className='calendar-container'>
