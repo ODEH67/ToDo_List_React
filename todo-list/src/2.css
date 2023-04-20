@@ -1,0 +1,303 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: "Poppins", sans-serif;
+--color-hover: rgb(20, 32, 46);;
+
+}
+
+.leftsidebar {
+position: fixed;
+top: 0.5em;
+left: 0.5em;
+z-index: 100;
+width: 78px;
+height: 95%;
+background: var(--secondary-color);
+padding: 8px 16px;
+border-radius: 1em;
+}
+
+.leftsidebar.minimized {
+width: 50px;
+padding: 20px 0;
+}
+
+.leftsidebar.expand {
+width: 250px;
+transition: var(--transition);
+}
+
+.nav-header {
+height: 60px;
+display: flex;
+align-items: center;
+position: relative;
+}
+
+.nav-header .logo {
+color: #000;
+font-size: 23px;
+font-weight: 600;
+opacity: 0;
+transition: var(--transition);
+}
+
+.leftsidebar.expand .nav-header .logo {
+opacity: 1;
+transition: var(--transition);
+}
+
+.nav-header .btn-menu {
+position: absolute;
+color: #000;
+top: 50%;
+right: 0;
+transform: translateY(-50%);
+font-size: 23px;
+cursor: pointer;
+margin-right: 10px;
+}
+
+.leftsidebar.expand .nav-header .btn-menu {
+margin-right: 0;
+}
+
+.nav-links {
+margin-top: 20px;
+height: 100%;
+}
+
+.nav-links li {
+  position: relative;
+  margin: 8px 0;
+  list-style: none;
+}
+
+.nav-links i {
+  color: #000;
+  height: 50px;
+  min-width: 50px;
+  font-size: 23px;
+  text-align: center;
+  line-height: 50px;
+}
+
+.nav-links input {
+  font-size: 14px;
+  font-weight: 400;
+  color: #000;
+  outline: none;
+  height: 40px;
+  width: 50%;
+  border: none;
+  border-radius: 12px;
+  background: #e2e2e2;
+  padding: 0;
+}
+
+.leftsidebar.expand .nav-links input {
+  width: 100%;
+  padding: 0 20px 0 40px;
+}
+
+.nav-links li a {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  border-radius: 12px;
+  align-items: center;
+  text-decoration: none;
+  background: #fff;
+}
+
+.nav-links li:hover a {
+  background: var(--color-hover);
+}
+
+.nav-links li:hover i {
+  color: #fff;
+}
+
+.nav-links li a .title {
+  color: #000;
+  font-size: 15px;
+  font-weight: 400;
+  white-space: nowrap;
+  display: none;
+  transition: var(--transition);
+}
+
+
+.leftsidebar.expand .nav-links li a .title {
+  display: block;
+  transition: var(--transition);
+}
+
+.nav-links li:hover a .title {
+  color: #fff;
+}
+
+.nav-links li .tooltip {
+  position: absolute;
+  top: -20px;
+  left: calc(100% + 15px);
+  z-index: 3;
+  background: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  padding: 6px 14px;
+  font-size: 15px;
+  white-space: nowrap;
+  border-radius: 3px;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0s;
+}
+
+.leftsidebar li:hover .tooltip {
+  opacity: 1;
+  pointer-events: auto;
+  transition: var(--transition);
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.leftsidebar.expand .tooltip {
+  display: none;
+}
+
+.nav-links .search-btn {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-25px);
+  font-size: 23px;
+  color: #000;
+  border-radius: 12px;
+  background: #fff;
+  transition: var(--transition);
+}
+
+.leftsidebar.expand .nav-links .search-btn {
+  background: transparent;
+  transition: var(--transition);
+}
+
+.leftsidebar.expand .nav-links li:hover .search-btn {
+  color: #000;
+}
+
+
+
+.home {
+position: relative;
+top: 0;
+left: 78px;
+width: calc(100% - 78px);
+min-height: 100vh;
+background: #e2e2e2;
+z-index: 6;
+transition: var(--transition);
+}
+
+/* .leftsidebar.expand ~ .home {
+left: 250px;
+width: calc(100% - 250px);
+transition: var(--transition);
+} */
+
+.home p {
+font-size: 20px;
+font-weight: 500;
+color: #000;
+display: inline-block;
+margin: 20px;
+white-space: nowrap;
+}
+
+
+/* this is the right side ***************************************************/
+/* .rightsidebar{
+position: fixed;
+top: 0.5em;
+
+right: 0.5em;
+z-index: 100;
+width: 250px;
+height: 95%;
+padding: 8px 16px;
+  background: var(--secondary-color);
+  border-right: var(--secondary-color);;
+  border-radius: 0.5em;
+
+} */
+
+
+/* This is for the calendar*/
+
+
+/*@media screen and (min-width: 480px) {
+  .sidebar-calendar {
+    max-width: 250px;
+  }
+  .weekdays {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  .weekdays div {
+    font-weight: bold;
+    text-align: center;
+    width: calc(100% / 7);
+  }
+  .days div {
+    width: calc(100% / 7);
+  }
+}*/
+
+
+
+
+
+ /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+/* @media screen and (max-width: 400px) {
+.leftsidebar {
+    width: 100%;
+    height:auto;
+    position:relative;
+}
+.leftsidebar a {
+    text-align: center;
+    float: left;
+} 
+} */ 
+
+
+
+ /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+/* @media screen and (max-width: 400px) {
+.rightsidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+    }
+.rightsidebar a {
+    text-align: center;
+    float: none;
+} 
+}*/
+
+@media screen and (max-width: 1230px) {
+  /* Reduce the width of the sidebar */
+.rightsidebar {
+    display: none; /* for example */
+    
+}
+.leftsidebar {
+
+}
+
+}

@@ -1,0 +1,295 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: rgb(20, 32, 46);
+    --secondary-color: rgba(255, 255, 255, 0.963);
+    --third-color: rgba(255, 255, 255, 0.963);
+}
+
+.dark_mode {
+    --primary-color: rgba(255, 255, 255, 0.963);
+    --secondary-color: rgba(184, 189, 206, 0.943);
+    --third-color: rgb(20, 32, 46);
+}
+
+body {
+    background-color:var(--primary-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    color: var(--primary-color);
+    border: 1px solid transparent;
+    border-radius: 0.8em;
+    opacity: 90%;
+}
+
+.head {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+    width: max-content;
+    font-size: 1.4em;
+    background-color: var(--secondary-color);
+    border: 1px solid transparent;
+    border-radius: 0.8em;
+    gap: 1em;
+    padding: 0.3em 1em;
+    font-weight: bold;
+}
+
+.head a {
+    text-decoration: none;
+    color: rgb(20, 32, 46);
+    font-size: 1.2em;
+
+}
+
+.head li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.namey {
+    color: var(--third-color);
+    font-size: 4em;
+    font-weight:bold;
+}
+
+.icon_1, .icon_2, .icon_3, .icon_4 {
+    width: 3em;
+}
+
+.body_container {
+    /* width: 50em; */
+    padding: 2em 0em;
+}
+
+
+.categories {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: var(--secondary-color);
+    padding: 1em 1em;
+    border-radius: 0.8em;
+    opacity: 90%;
+    width: 60em;
+}
+
+@media screen and (max-width: 1230px) { 
+    .categories {
+        width: 40em;
+}
+
+
+}
+
+.categories a {
+text-decoration: none;
+position: relative;
+padding: 0em 1em;
+}
+
+
+.categories h1 {
+    position:absolute;
+    padding: 0em;
+    color: rgba(255, 255, 255, 0.963);
+    font-size: 3.5rem;
+    top: 0.2em;
+    left: 0.7em;
+    font-weight: lighter;
+}
+
+.categories p {
+    position:absolute;
+    padding: 0em;
+    color: rgba(255, 255, 255, 0.963);
+    font-size: 1.8rem;
+    top: 3em;
+    left: 1.2em;
+    /* font-weight: bold; */
+}
+
+.categories img {
+    width: 12em;
+    border-radius: 0.7em;
+
+    }
+
+    @media screen and (max-width: 1230px) { 
+        .categories img {
+            width: 10em;
+            border-radius: 0.6em;
+      }
+      .categories p {
+        font-size: 1.5rem;
+
+    }
+    .categories h1 {
+        font-size: 3rem;
+    }
+    }
+
+.list {
+    display: flex;
+    flex-direction: column;
+    /* justify-content:space-around; */
+    /* flex-wrap: wrap; */
+    padding: 5em 1em;
+    gap: 1em;
+    justify-content:center;
+}
+
+.list a {
+    text-decoration: none;
+/* padding: 1em 1em 0em; */
+}
+
+
+.list_new {
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+
+    border-radius: 0.2em;
+    padding: 0.5em 0.5em;
+    opacity: 90%;
+    text-align: center;
+    font-size: 2em;
+}
+
+.list_input_1, .list_title_1 {
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    text-align: center;
+    border-radius: 0.3em;
+}
+
+.list_title_1 {
+    font-size: 0.6em;
+    padding: 0.3em 0em 0em 0em;
+    margin-bottom: 1em;
+    max-width: 8.5em;
+    /* background-color:rgba(253, 205, 254, 0.584); */
+}
+
+.card_greeting {
+    padding: 0.6em;
+    background-color:var(--primary-color);
+    border-radius: 1rem 0rem;
+    border:3px solid var(--secondary-color);
+    color:var(--secondary-color)
+}
+
+.list_input_1 {
+    font-size: 1em;
+    /* max-width: 10em; */
+    height: 1.5em;
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    padding: 0em 1em;
+}
+
+.adder_modifier {
+    padding: 2rem;
+}
+
+.color_list {
+    text-decoration: none;
+} */
+
+.add_text, .cancel_text {
+    cursor: pointer;
+    background-color: transparent;
+    border: 0;
+    font-size: 1em;
+    padding-left: 0.4em;
+}
+
+
+.to_do_text li {
+    background-color: var(--secondary-color);
+    font-size: 0.45em;
+    margin: 5px; 
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    list-style: none;
+}
+
+
+/* ----------------------------------------------------------------- */
+/* .taskBg .taskText {
+    flex: 1;
+} */
+
+.taskBg .done .taskText {
+    text-decoration: line-through;
+    opacity: 0.3;
+}
+.taskBg {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.7em;
+    border-bottom: 2px solid var(--primary-color);
+    background-color:aliceblue;
+}
+
+.add_div li {
+    border-radius: 4px;
+}
+
+
+.icons {
+    padding: 0em 0.2em;
+}
+
+.iconsWrap{
+    flex:none;
+}
+.iconsWrap span {
+    cursor: pointer;
+    font-size: 1.2em;
+}
+.taskBg div {
+    display: flex;
+    align-items: center;
+}
+
+.taskNumber {
+    color: #7a7979;
+    border: 1px solid #6e6e6e;
+    border-radius: 50%;
+    width: 1em;
+    height:  1em;
+    display: flex;
+    text-align: center;
+    margin-right: 8px;
+    align-items: center;
+    justify-content: center;
+}
+/* ----------------------------------------------------------------- */
+.hide{
+    display: none;
+}
