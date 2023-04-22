@@ -23,8 +23,13 @@ export default function LanguageApp() {
 
     return (
         <div>
-            <div>
-                <MdLanguage />
+            <div className = "drop-container" ref={langRef}>
+                <MdLanguage onClick = {() => {setDrop(!drop)}}/>
+            </div>
+            <div className = {`dropdown-menu ${drop? 'active' : 'inactive'} `}>
+                <div className="lang-items"><a >English</a></div>
+                <div className="lang-items"><a >German</a></div>
+                <div className="lang-items"><a >Japanese</a></div>
             </div>
         </div>
     )

@@ -1,72 +1,35 @@
-* { 
+ /*{ 
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+    
+}*/
 
 :root {
     --primary-color: rgb(20, 32, 46);
     --secondary-color: rgba(255, 255, 255, 0.963);
     --third-color: rgba(255, 255, 255, 0.963);
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+
 }
 
-.dark_mode {
-    --primary-color: rgba(255, 255, 255, 0.963);
-    --secondary-color: rgba(184, 189, 206, 0.943);
-    --third-color: rgb(20, 32, 46);
-}
 
-body {
+
+/*body {
     background-color:var(--primary-color);
     display: flex;
     flex-direction: row;
     justify-content: center;
-}
+}*/
 
-main {
+/*main {
     display: flex;
     flex-direction: column;
     padding: 2em;
     font-family: 'Roboto', sans-serif;
-}
+}*/
 
-header {
-    display: flex;
-    flex-direction: row;
-    justify-content:space-between;
-    color: var(--primary-color);
-    border: 1px solid transparent;
-    border-radius: 0.8em;
-    opacity: 90%;
-}
 
-.head {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    list-style: none;
-    width: max-content;
-    font-size: 1.4em;
-    background-color: var(--secondary-color);
-    border: 1px solid transparent;
-    border-radius: 0.8em;
-    gap: 1em;
-    padding: 0.3em 1em;
-    font-weight: bold;
-}
 
-.head a {
-    text-decoration: none;
-    color: rgb(20, 32, 46);
-    font-size: 1.2em;
-
-}
-
-.head li {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
 
 .namey {
     color: var(--third-color);
@@ -75,25 +38,34 @@ header {
 }
 
 .icon_1, .icon_2, .icon_3, .icon_4 {
-    width: 3em;
+    width: 2em;
 }
 
 .body_container {
     /* width: 50em; */
+    width: auto;
+    height: 85%rem;
     padding: 2em 0em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: auto;
 }
 
 
 .categories {
+    width: auto;
+    height: auto;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-wrap: wrap ;
     background-color: var(--secondary-color);
-    padding: 1em 1em;
+    padding: 0.3em 0.3em;
     border-radius: 0.8em;
     opacity: 90%;
-    width: 60em;
+    
 }
 
 @media screen and (max-width: 1230px) { 
@@ -107,15 +79,15 @@ header {
 .categories a {
 text-decoration: none;
 position: relative;
-padding: 0em 1em;
+padding: 0.7em 0.7em;
 }
 
 
 .categories h1 {
     position:absolute;
     padding: 0em;
-    color: rgba(255, 255, 255, 0.963);
-    font-size: 3.5rem;
+    color: var(--secondary-color);
+    font-size: 2.7rem;
     top: 0.2em;
     left: 0.7em;
     font-weight: lighter;
@@ -124,15 +96,16 @@ padding: 0em 1em;
 .categories p {
     position:absolute;
     padding: 0em;
-    color: rgba(255, 255, 255, 0.963);
-    font-size: 1.8rem;
+    color: var(--secondary-color);
+    font-size: 1.5rem;
     top: 3em;
     left: 1.2em;
     /* font-weight: bold; */
 }
 
 .categories img {
-    width: 12em;
+    width: 9em;
+    height: 13em;
     border-radius: 0.7em;
 
     }
@@ -154,28 +127,35 @@ padding: 0em 1em;
 .list {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
     /* justify-content:space-around; */
     /* flex-wrap: wrap; */
-    padding: 5em 1em;
-    gap: 1em;
-    justify-content:center;
+    /*padding: 5em 1em;*/
+    padding-top: 1em;
+    gap: 0.5em;
+    justify-content:flex-start;
+    height: auto;
+    margin: 0;
+    
 }
 
 .list a {
     text-decoration: none;
 /* padding: 1em 1em 0em; */
+    margin: 0
 }
 
 
 .list_new {
-    color: var(--primary-color);
+    color:rgb(20, 32, 46);
     background-color: var(--secondary-color);
-
+    height: auto;
     border-radius: 0.2em;
-    padding: 0.5em 0.5em;
+    padding: 0.5em;
     opacity: 90%;
     text-align: center;
-    font-size: 2em;
+    font-size: 1.2em;
+    margin: 0;
 }
 
 .list_input_1, .list_title_1 {
@@ -196,10 +176,12 @@ padding: 0em 1em;
 
 .card_greeting {
     padding: 0.6em;
-    background-color:var(--primary-color);
+    background-color: var(--primary-color);
     border-radius: 1rem 0rem;
-    border:3px solid var(--secondary-color);
-    color:var(--secondary-color)
+    border:3px solid beige;
+    color: var(--secondary-color);
+    border-style: inset;
+    margin: 0
 }
 
 .list_input_1 {
@@ -212,7 +194,7 @@ padding: 0em 1em;
 }
 
 .adder_modifier {
-    padding: 2rem;
+    padding: 1rem;
 }
 
 .color_list {

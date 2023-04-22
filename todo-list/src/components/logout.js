@@ -2,7 +2,7 @@ import React from 'react';
 import './anh.css';
 import {RiLogoutBoxRLine} from 'react-icons/ri';
 
-export default function Profile() {
+export default function Logout() {
     const handleClick=()=>{
         localStorage.clear();
         window.location.reload();
@@ -11,3 +11,5 @@ export default function Profile() {
         <div onClick={handleClick}><RiLogoutBoxRLine /></div>
     )
 }
+
+//
