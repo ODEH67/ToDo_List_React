@@ -8,7 +8,7 @@
 
 .calendar {
   width: 22%;
-  height: 95vh;
+  height:35rem;
   background-color: rgba(255, 255, 255, 0.963);
   border-radius: 0.7rem;
   margin: 0;
@@ -181,4 +181,7 @@
     font-weight: bold;
     padding-top: 1rem;
   }
+
+#time {
   
+}
