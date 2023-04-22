@@ -42,15 +42,12 @@ export default function Popup() {
               <h2>Login</h2>
               <h1 onClick={closePopup}>X</h1>
             </div>
-            <form>
-              <label>
-                Email:
-                <input type="text" ref={email} />
-              </label>
-              <label>
-                Password:
-                <input type="password" ref={password} />
-              </label>
+            <form id="login-form">
+              <label for="email"><b>Email:</b></label>                
+              <input type="text" ref={email} />
+              <label for="psw"><b>Password:</b></label>
+              <input type="password" ref={password} />
+              
               <button onClick={handleClick}>Login</button>
             </form>
             {getInfo()}

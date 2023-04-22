@@ -1,7 +1,7 @@
 import React from 'react';
 import { useEffect, useState } from 'react';
-
-
+import LanguageApp from './language';
+import PassInfo from './info';
 import './anh.css';
 import {BsSearch} from 'react-icons/bs';
 import {CgDarkMode} from 'react-icons/cg';
@@ -36,9 +36,10 @@ export default function Heading() {
                     <button type="submit" className="searchButton"><BsSearch /></button>
                 </div>
                 <div id='theme-tool'>
-                    <MdLanguage />
+                    <LanguageApp />
                     
                     <div id="darkLight-mode" onClick={handleClick}><CgDarkMode /></div>
+                    <PassInfo />
                     
                 </div>
             </div>
