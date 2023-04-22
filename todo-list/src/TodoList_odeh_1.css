@@ -50,7 +50,7 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    z-index: auto;
+    z-index: 0;
 }
 
 
@@ -64,8 +64,8 @@
     background-color: var(--secondary-color);
     padding: 0.3em 0.3em;
     border-radius: 0.8em;
-    opacity: 90%;
-    
+    /* opacity: 90%; */
+    z-index: 1;
 }
 
 @media screen and (max-width: 1230px) { 
@@ -136,7 +136,7 @@ padding: 0.7em 0.7em;
     justify-content:flex-start;
     height: auto;
     margin: 0;
-    
+    z-index: 1;
 }
 
 .list a {
